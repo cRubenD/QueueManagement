@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1060.0" styleClass="Window" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.GraphicalUserInterface.WindowController">
+   <children>
+      <Text id="title" layoutX="716.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Queues management" textAlignment="CENTER" wrappingWidth="270.13671875" />
+      <Label fx:id="text1" layoutX="53.0" layoutY="69.0" style="-fx-font-size: 20;" styleClass="Text" stylesheets="@Stylesheet.css" text="Number of clients" />
+      <Label fx:id="text2" layoutX="49.0" layoutY="114.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Number of queues" />
+      <Label fx:id="text3" layoutX="50.0" layoutY="156.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Simulation interval" />
+      <Label fx:id="text4" layoutX="14.0" layoutY="199.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Min arrival time" />
+      <Label fx:id="text5" layoutX="14.0" layoutY="240.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Min service time" />
+      <TextField fx:id="NOClients" layoutX="240.0" layoutY="71.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="NOQueues" layoutX="240.0" layoutY="117.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="SimulationTime" layoutX="240.0" layoutY="159.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="MinArrivalTime" layoutX="160.0" layoutY="201.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="MinServiceTime" layoutX="160.0" layoutY="242.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-radius: 15;" />
+      <ImageView fx:id="closeBtn" fitHeight="53.0" fitWidth="53.0" layoutX="986.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@rectangle-xmark.png" />
+         </image></ImageView>
+      <Label layoutX="266.0" layoutY="199.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Max arrival time" />
+      <Label layoutX="263.0" layoutY="240.0" styleClass="Text" stylesheets="@Stylesheet.css" text="Max service time" />
+      <TextField fx:id="MaxServiceTime" layoutX="420.0" layoutY="242.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="MaxArrivalTime" layoutX="420.0" layoutY="201.0" prefHeight="26.0" prefWidth="96.0" style="-fx-background-radius: 15;" />
+      <ImageView fitHeight="231.0" fitWidth="257.0" layoutX="736.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@queue.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="simulationBtn" layoutX="94.0" layoutY="295.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="145.0" styleClass="Simulate" stylesheets="@Stylesheet.css" text="SIMULATE" textAlignment="CENTER" />
+      <TextArea fx:id="logger" layoutX="60.0" layoutY="371.0" prefHeight="318.0" prefWidth="737.0" style="-fx-background-radius: 15;" text="&#10;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <ProgressBar fx:id="progress" layoutX="280.0" layoutY="312.0" prefHeight="30.0" prefWidth="280.0" progress="0.0" />
+   </children>
+</AnchorPane>

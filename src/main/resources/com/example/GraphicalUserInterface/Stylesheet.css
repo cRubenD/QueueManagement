@@ -1,0 +1,23 @@
+.Window{
+    -fx-background-color: linear-gradient(to bottom right, #0076a3, #9dafe4);
+    -fx-background-radius: 20;
+}
+
+.Title{
+    -fx-font-size: 40;
+    -fx-font-style: italic;
+    -fx-font-family: "Script MT Bold";
+    -fx-progress-color: #af1daf;
+}
+
+.Text{
+    -fx-font-size: 20;
+    -fx-font-style: italic;
+}
+
+.Simulate{
+    -fx-font-size: 20;
+    -fx-font-style: italic;
+    -fx-background-color: linear-gradient(to bottom right, #1B4F72 , #9dafe4);
+    -fx-background-radius: 20;
+}
